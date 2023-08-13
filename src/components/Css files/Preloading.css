@@ -1,0 +1,46 @@
+.preloader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.logo {
+  color: rgba(255, 0, 0, 0.851);
+  font-size: 15vw;
+  animation: netflix_animation 0.4s;
+}
+
+.circle-loading::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-top: 1px solid rgba(255, 0, 0, 0.851);
+}
+.circle-loading {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: rotate4 0.5s linear infinite;
+}
+@keyframes rotate4 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes netflix_animation {
+  0% {
+    transform: translateX(10%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+

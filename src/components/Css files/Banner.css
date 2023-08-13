@@ -1,0 +1,76 @@
+.banner {
+  min-height: 65vh;
+  object-fit: contain;
+  color: white;
+  margin-bottom: 2vh;
+  overflow: none;
+  box-shadow: 0px 0px 100px 2px #0000009e;
+}
+.banner-contents {
+  padding: 5vh;
+}
+.banner-title {
+  color: white;
+  font-size: 32px;
+  padding-bottom: 1.5rem;
+}
+.banner-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.banner-button {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.2vw;
+  outline: none;
+  border: none;
+  margin-bottom: 1.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+.banner-description {
+  width: 30%;
+  font-size: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .banner-description {
+    width: auto;
+  }
+}
+.banner-button:hover {
+  color: #000;
+  background-color: #e6e6e6;
+  transition: all 0.6s;
+}
+
+.banner-button {
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .banner {
+    background-image: none !important;
+    background-color: none !important;
+    height: 50vh;
+    background-color: rgb(16, 15, 15);
+    object-fit: contain;
+    color: white;
+    overflow: none;
+    margin-bottom: 2vh;
+  }
+}
+
+.banner-preloader{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 65vh;
+  width: 100%;
+  object-fit: contain;
+  color: white;
+  margin-bottom: 2vh;
+  overflow: none;
+  box-shadow: 0px 0px 10px 2px rgba(51, 51, 51, 0.5);
+  
+}
